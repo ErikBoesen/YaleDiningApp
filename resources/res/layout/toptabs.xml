@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/toptab" android:padding="@dimen/toptabs_toptab_padding" android:layout_width="match_parent" android:layout_height="@dimen/toptabs_toptab_layout_height" android:weightSum="1">
+    <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/button1" android:background="@drawable/selected" android:padding="@dimen/toptabs_button1_padding" android:layout_width="match_parent" android:layout_height="@dimen/toptabs_button1_layout_height" android:layout_weight="0.5"/>
+    <ImageView android:id="@+id/imageview1" android:background="@drawable/seperater" android:layout_width="@dimen/toptabs_imageview1_layout_width" android:layout_height="@dimen/toptabs_imageview1_layout_height"/>
+    <Button android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/button2" android:background="@drawable/unselected1" android:padding="@dimen/toptabs_button2_padding" android:layout_width="match_parent" android:layout_height="@dimen/toptabs_button2_layout_height" android:layout_weight="0.5"/>
+</LinearLayout>

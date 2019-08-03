@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/layout" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topbar" layout="@layout/topbar"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="#0000ff" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/mainlayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

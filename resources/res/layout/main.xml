@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root" android:background="@android:color/white" android:padding="@dimen/main_root_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/topbar" layout="@layout/topbar"/>
+    <include android:id="@+id/toptab" layout="@layout/toptabs"/>
+    <RelativeLayout android:id="@+id/middle" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/middle1" android:background="#cccccc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+        <ScrollView android:id="@+id/scroll" android:background="@android:color/transparent" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:isScrollContainer="true">
+            <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="vertical" android:id="@+id/list" android:background="@android:color/transparent" android:paddingLeft="@dimen/main_list_paddingLeft" android:paddingRight="@dimen/main_list_paddingRight" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </ScrollView>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/mainprogressbar" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="@dimen/main_mainprogressbar_layout_width" android:layout_height="@dimen/main_mainprogressbar_layout_height" style="@style/Widget.ProgressBar.Small.Inverse"/>
+        <TextView android:textColor="#000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@+id/bottom_text" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Produced in a facility that contains nuts, peanuts, and gluten" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>
